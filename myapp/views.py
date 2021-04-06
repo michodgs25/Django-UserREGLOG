@@ -2,10 +2,6 @@ from django.shortcuts import render
 from myapp.forms import LoginForm
 
 
-def hello(request):
-    return render(request, "myapp/templates/hello.html", {})
-
-
 def login(request):
     username = "not logged in"
 

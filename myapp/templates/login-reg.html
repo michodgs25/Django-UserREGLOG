@@ -2,7 +2,7 @@
 <html>
 <body>
 
-    <form name="form" action="{% url "myapp.views.login" %}" method="POST">
+    <form name="form" action="{% url 'myapp.views.login' %}" method="POST">
         {% csrf_token %}
 
         <div style="max-width:470px;">
