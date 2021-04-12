@@ -32,16 +32,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'users.apps.UserConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
-    'accounts',
-
-    "crispy_forms",
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -61,8 +60,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates', 'allauth'),
-            os.path.join(BASE_DIR, "templates", "accounts"),
+            os.path.join(BASE_DIR, "templates", "users"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
