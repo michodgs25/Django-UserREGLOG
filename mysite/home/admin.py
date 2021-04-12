@@ -1,5 +1,4 @@
-from django.apps import AppConfig
+from django.contrib import admin
+from .models import Post
 
-
-class HomeConfig(AppConfig):
-    name = 'home'
+admin.site.register(Post)
